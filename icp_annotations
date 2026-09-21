@@ -1,0 +1,120 @@
+$ python test_pcd_alignment.py
+Executando full
+tempo inicial:1786475298.1549828 segundos
+angles:86
+paths:13
+Received angles: [2.258965275246874, 6.846987505382771, 10.997728684023519, 15.821963777264667, 19.33600549848646, 23.28595978805181, 27.462702146572823, 31.289933908176977, 35.15542491078039, 39.4678371684135, 43.36155693736061, 47.386417939879266, 51.936533186716034, 55.84778474537188, 59.37313926064685, 63.30848879391103, 67.3003389417396, 71.03278297127146, 75.85046201652526, 79.98195573306165, 84.77739946133012, 90.02279031293014, 93.9843665723718, 98.78063645898735, 102.51435267100457, 106.48218847375072, 110.98082848026313, 115.25506512642292, 119.57203392610523, 124.19673657315995, 128.27885845866052, 132.9826543634212, 136.7071079718846, 140.52850087204195, 144.9946470063882, 148.67805372298798, 152.47558433174643, 157.14715499251514, 161.75946526436377, 165.9465827525563, 170.56103951557049, 174.21849827107923, 177.71114350480306, 181.6873701366509, 185.82356231200777, 189.54358355559685, 193.4862392683537, 197.28855449968663, 201.03188557295786, 205.2984739188371, 208.88933569519634, 213.1149050257206, 217.30791459414914, 221.5287626578004, 224.91591304590477, 229.1112135564982, 233.57137130994218, 237.38170737308027, 241.65066775642228, 245.84329212218594, 250.83216080701987, 256.74372925681536, 261.5858103840445, 265.8803233889004, 269.81027755062803, 273.8760967470282, 277.9165736628434, 282.2838088760662, 286.7025091927011, 290.71682273804026, 295.07345220683817, 298.87330670272627, 302.5043055830762, 306.6844209991431, 310.2934759987344, 314.49749932230515, 318.6623840277405, 322.87481845423747, 327.631022195248, 332.64361885739373, 336.841856538307, 340.7662708774987, 345.4324233586783, 349.49128103060184, 353.2802484827506, 357.4380018704293]
+Total paths before subsampling: 13
+13 files | Rotation/frame: 27.69°
+Precompute neighbors.[========================================] 100%
+Clustering[========================================] 100%
+WARNING: Using soft CircularBuffer (6144 KiB)
+FEngine (64 bits) created at 0x5d8f746600f0 (threading is enabled)
+FEngine resolved backend: OpenGL
+Pontos no frame 0: 162309
+
+[1/12] Alinhando: 20260810_174903_frame_18_clean.ply
+Precompute neighbors.[========================================] 100%
+Clustering[========================================] 100%
+   Fitness sem init: 0.2272 | com init: 0.0758
+[UPDATE] Applying point-to-plane ICP
+   P2P fitness: 0.2485 | P2Plane fitness: 0.6179 | RMSE: 3.9125
+View pointcloud? (y/n)y
+alinhamento realizado em:23.847909212112427 segundos
+
+[2/12] Alinhando: 20260810_174904_frame_20_clean.ply
+Precompute neighbors.[========================================] 100%
+Traceback (most recent call last):==================>] 97%
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/test_pcd_alignment.py", line 54, in <module>
+    test_point_cloud_alignment_full()
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/test_pcd_alignment.py", line 34, in test_point_cloud_alignment_full
+    point_cloud = point_to_point(path, full_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/../../src/align_frames.py", line 117, in point_to_point
+    target = remove_cluster_artifacts(target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/../../src/align_frames.py", line 18, in remove_cluster_artifacts
+    labels = np.array(pcd.cluster_dbscan(eps=30.0,min_points=50,print_progress=True))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^C
+(3Dbce_env) victorbg@pop-os:~/Documents/3DBodyCircumferenceEvaluator/src/tests$ ^C
+(3Dbce_env) victorbg@pop-os:~/Documents/3DBodyCircumferenceEvaluator/src/tests$ ^C
+(3Dbce_env) victorbg@pop-os:~/Documents/3DBodyCircumferenceEvaluator/src/tests$ python test_pcd_alignment.py
+Executando full
+tempo inicial:1786475348.5201962 segundos
+angles:86
+paths:12
+Received angles: [2.258965275246874, 6.846987505382771, 10.997728684023519, 15.821963777264667, 19.33600549848646, 23.28595978805181, 27.462702146572823, 31.289933908176977, 35.15542491078039, 39.4678371684135, 43.36155693736061, 47.386417939879266, 51.936533186716034, 55.84778474537188, 59.37313926064685, 63.30848879391103, 67.3003389417396, 71.03278297127146, 75.85046201652526, 79.98195573306165, 84.77739946133012, 90.02279031293014, 93.9843665723718, 98.78063645898735, 102.51435267100457, 106.48218847375072, 110.98082848026313, 115.25506512642292, 119.57203392610523, 124.19673657315995, 128.27885845866052, 132.9826543634212, 136.7071079718846, 140.52850087204195, 144.9946470063882, 148.67805372298798, 152.47558433174643, 157.14715499251514, 161.75946526436377, 165.9465827525563, 170.56103951557049, 174.21849827107923, 177.71114350480306, 181.6873701366509, 185.82356231200777, 189.54358355559685, 193.4862392683537, 197.28855449968663, 201.03188557295786, 205.2984739188371, 208.88933569519634, 213.1149050257206, 217.30791459414914, 221.5287626578004, 224.91591304590477, 229.1112135564982, 233.57137130994218, 237.38170737308027, 241.65066775642228, 245.84329212218594, 250.83216080701987, 256.74372925681536, 261.5858103840445, 265.8803233889004, 269.81027755062803, 273.8760967470282, 277.9165736628434, 282.2838088760662, 286.7025091927011, 290.71682273804026, 295.07345220683817, 298.87330670272627, 302.5043055830762, 306.6844209991431, 310.2934759987344, 314.49749932230515, 318.6623840277405, 322.87481845423747, 327.631022195248, 332.64361885739373, 336.841856538307, 340.7662708774987, 345.4324233586783, 349.49128103060184, 353.2802484827506, 357.4380018704293]
+Total paths before subsampling: 12
+12 files | Rotation/frame: 30.00°
+Precompute neighbors.[========================================] 100%
+Clustering[========================================] 100%
+WARNING: Using soft CircularBuffer (6144 KiB)
+FEngine (64 bits) created at 0x62818a72fd70 (threading is enabled)
+FEngine resolved backend: OpenGL
+Pontos no frame 0: 162309
+
+[1/11] Alinhando: 20260810_174903_frame_19_clean.ply
+Precompute neighbors.[========================================] 100%
+   Fitness sem init: 0.2135 | com init: 0.0716====>] 97%
+[UPDATE] Applying point-to-plane ICP
+   P2P fitness: 0.2341 | P2Plane fitness: 0.5757 | RMSE: 4.1761
+View pointcloud? (y/n)y
+alinhamento realizado em:38.133403301239014 segundos
+
+[2/11] Alinhando: 20260810_174908_frame_30_clean.ply
+Precompute neighbors.[========================================] 100%
+Traceback (most recent call last):================>] 97%5%
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/test_pcd_alignment.py", line 54, in <module>
+    test_point_cloud_alignment_full()
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/test_pcd_alignment.py", line 34, in test_point_cloud_alignment_full
+    point_cloud = point_to_point(path, full_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/../../src/align_frames.py", line 117, in point_to_point
+    target = remove_cluster_artifacts(target)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/../../src/align_frames.py", line 18, in remove_cluster_artifacts
+    labels = np.array(pcd.cluster_dbscan(eps=30.0,min_points=50,print_progress=True))
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt
+^C
+(3Dbce_env) victorbg@pop-os:~/Documents/3DBodyCircumferenceEvaluator/src/tests$ ^C
+(3Dbce_env) victorbg@pop-os:~/Documents/3DBodyCircumferenceEvaluator/src/tests$ ^C
+(3Dbce_env) victorbg@pop-os:~/Documents/3DBodyCircumferenceEvaluator/src/tests$ python test_pcd_alignment.py
+Executando full
+tempo inicial:1786475416.6518097 segundos
+angles:86
+paths:12
+Received angles: [2.258965275246874, 6.846987505382771, 10.997728684023519, 15.821963777264667, 19.33600549848646, 23.28595978805181, 27.462702146572823, 31.289933908176977, 35.15542491078039, 39.4678371684135, 43.36155693736061, 47.386417939879266, 51.936533186716034, 55.84778474537188, 59.37313926064685, 63.30848879391103, 67.3003389417396, 71.03278297127146, 75.85046201652526, 79.98195573306165, 84.77739946133012, 90.02279031293014, 93.9843665723718, 98.78063645898735, 102.51435267100457, 106.48218847375072, 110.98082848026313, 115.25506512642292, 119.57203392610523, 124.19673657315995, 128.27885845866052, 132.9826543634212, 136.7071079718846, 140.52850087204195, 144.9946470063882, 148.67805372298798, 152.47558433174643, 157.14715499251514, 161.75946526436377, 165.9465827525563, 170.56103951557049, 174.21849827107923, 177.71114350480306, 181.6873701366509, 185.82356231200777, 189.54358355559685, 193.4862392683537, 197.28855449968663, 201.03188557295786, 205.2984739188371, 208.88933569519634, 213.1149050257206, 217.30791459414914, 221.5287626578004, 224.91591304590477, 229.1112135564982, 233.57137130994218, 237.38170737308027, 241.65066775642228, 245.84329212218594, 250.83216080701987, 256.74372925681536, 261.5858103840445, 265.8803233889004, 269.81027755062803, 273.8760967470282, 277.9165736628434, 282.2838088760662, 286.7025091927011, 290.71682273804026, 295.07345220683817, 298.87330670272627, 302.5043055830762, 306.6844209991431, 310.2934759987344, 314.49749932230515, 318.6623840277405, 322.87481845423747, 327.631022195248, 332.64361885739373, 336.841856538307, 340.7662708774987, 345.4324233586783, 349.49128103060184, 353.2802484827506, 357.4380018704293]
+Total paths before subsampling: 12
+12 files | Rotation/frame: 30.00°
+Precompute neighbors.[========================================] 100%
+Clustering[========================================] 100%
+WARNING: Using soft CircularBuffer (6144 KiB)
+FEngine (64 bits) created at 0x5d1b0eb58d70 (threading is enabled)
+FEngine resolved backend: OpenGL
+Pontos no frame 0: 162309
+
+[1/11] Alinhando: 20260810_174904_frame_20_clean.ply
+Precompute neighbors.[========================================] 100%
+   Fitness sem init: 0.1989 | com init: 0.0719====>] 97%
+[UPDATE] Applying point-to-plane ICP
+   P2P fitness: 0.2181 | P2Plane fitness: 0.1702 | RMSE: 5.3400
+View pointcloud? (y/n)y
+^CTraceback (most recent call last):
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/test_pcd_alignment.py", line 54, in <module>
+    test_point_cloud_alignment_full()
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/test_pcd_alignment.py", line 34, in test_point_cloud_alignment_full
+    point_cloud = point_to_point(path, full_name)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/victorbg/Documents/3DBodyCircumferenceEvaluator/src/tests/../../src/align_frames.py", line 190, in point_to_point
+    o3d.visualization.draw([aligned])
+  File "/home/victorbg/miniconda3/envs/3Dbce_env/lib/python3.12/site-packages/open3d/visualization/draw.py", line 230, in draw
+    gui.Application.instance.run()
+KeyboardInterrupt
+^C
+
+
+
+reg_fine.fitness <= 0.2300 o ply sai torto (x,y,z do ply atual desalinhados em relação ao x,y,z do ply anterior)

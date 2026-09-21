@@ -1,0 +1,28 @@
+name: 3Dbce_env_win
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.12
+  - numpy<=2.4
+  - pip
+  - pytorch
+  - torchvision
+  - torchaudio
+  - pyserial
+  - matplotlib
+  - scikit-learn
+  - pip:
+      - rembg[cpu]
+      - rembg[gpu]
+      - open3d
+      - opencv-python
+      #- pyrealsense2 caso a câmera Intel RealSense for utilizada
+      - pyorbbecsdk2
+      - pygetwindow
+      - screeninfo
+      - pywin32
+      - keyboard
+      - SQLAlchemy
+      - fastapi[standard]
+      - psycopg2-binary

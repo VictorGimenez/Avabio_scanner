@@ -1,0 +1,53 @@
+ALTER USER postgres PASSWORD 'admin';
+\q
+DATABASE_URL=postgresql://postgres:admin@localhost:5432/clinica
+\l
+DROP DATABASE clinica;
+DROP DATABASE clinica;
+DATABASE_URL=postgresql://postgres:admin@localhost:5432/avanutri
+\l
+CREATE DATABASE avanutri;
+CREATE DATABASE avanutri;
+\l
+DATABASE_URL=postgresql://postgres:admin@localhost:5432/avanutri
+USE avanutri;
+USE avanutri;
+USE avanutri;
+\c avanutri
+CREATE TABLE paciente (
+\c
+\c avanutri
+\c avanutri
+SHOW TABLES;
+\l
+DESCRIBE avanutri;
+SELECT * FROM pacientes;
+SELECT * FROM pacientes;
+SELECT * FROM pacientes;
+SELECT * FROM pacientes;
+SELECT * FROM pacientes;
+SELECT * FROM pacientes;
+SELECT * FROM pacientes;
+SELECT * FROM pacientes
+;
+show tables;
+\l
+use avanutri;
+\c avanutri;
+SELECT * FROM pacientes;
+\l
+/l
+/l
+/c
+/c avanutri
+exit
+\q
+\l
+\c avanutri
+select * from pacientes;
+TRUNCATE TABLE pacientes;
+select * from pacientes;
+-ç
+=l
+\l
+\s avanutri

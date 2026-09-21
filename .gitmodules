@@ -1,0 +1,12 @@
+[submodule "OpenCV-3d-Scanner"]
+	path = OpenCV-3d-Scanner
+	url = https://github.com/UlysesO/OpenCV-3d-Scanner.git
+[submodule "3D-scan-and-reconstruction-realsense-d435i"]
+	path = 3D-scan-and-reconstruction-realsense-d435i
+	url = https://github.com/ridanlukita/3D-scan-and-reconstruction-realsense-d435i.git
+[submodule "Structure-from-motion-RGBd-Camera"]
+	path = Structure-from-motion-RGBd-Camera
+	url = https://github.com/diegobonilla98/Structure-from-motion-RGBd-Camera.git
+[submodule "auxiliary_projects/Human-Body-Measurements-using-Computer-Vision"]
+	path = auxiliary_projects/Human-Body-Measurements-using-Computer-Vision
+	url = https://github.com/VictorGimenez/3DBodyCircumferenceEvaluator
